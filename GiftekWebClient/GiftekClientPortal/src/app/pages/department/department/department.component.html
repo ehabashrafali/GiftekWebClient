@@ -1,0 +1,59 @@
+<p>department works!</p>
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive table-card">
+                    <table class="table table-hover table-nowrap align-middle mb-0">
+                        <thead>
+                            <tr class="text-muted text-uppercase">
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">phone</th>
+                                <th scope="col">Head</th>
+                                <th scope="col">established On</th>
+                                <th scope="col" style="width: 16%;">Status</th>
+                                <th scope="col" style="width: 12%;">Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr *ngFor="let department of paginateData">
+                                <td>
+                                    <!-- <img [src]="department.avatar" alt="" class="avatar-xs rounded-circle me-2" /> -->
+                                    <a href="javascript:void(0);" class="text-body align-middle fw-medium">{{ department.name}}</a>
+                                </td>
+                                <td>{{ department.email }}</td>
+                                <td>{{ department.phone }}</td>
+                                <td>{{ department.head }}</td>
+                                <td>{{ department.establishedDate }}</td>
+                                <td>
+                                    <span class="badge p-2" [ngClass]="department.status.class">{{ department.status.label }}</span>
+                                </td>
+                                <td>
+                                    <ul class="list-inline hstack gap-2 mb-0">
+                                        <li class="list-inline-item" placement="top" ngbTooltip="View">
+                                            <a href="" class="btn btn-soft-info btn-sm d-inline-block">
+                                                <i class="las la-eye fs-17 align-middle"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item edit" placement="top" ngbTooltip="Edit">
+                                            <a href="" class="btn btn-soft-info btn-sm d-inline-block">
+                                                <i class="las la-pen fs-17 align-middle"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item" placement="top" ngbTooltip="Remove">
+                                            <a href="" class="btn btn-soft-danger btn-sm d-inline-block">
+                                                <i class="las la-file-download fs-17 align-middle"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table><!-- end table -->
+                </div><!-- end table responsive -->
+            </div>
+        </div>
+    </div>
+</div>

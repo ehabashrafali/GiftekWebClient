@@ -64,7 +64,6 @@ import { ProductAddComponent } from '../pages/invoice/product-add/product-add.co
 import { PaymentSummaryComponent } from '../pages/invoice/payment-summary/payment-summary.component';
 import { SaleReportComponent } from '../pages/invoice/sale-report/sale-report.component';
 import { ExpensesReportComponent } from '../pages/invoice/expenses-report/expenses-report.component';
-import { UserComponent } from '../pages/invoice/user/user.component';
 import { TransactionListComponent } from '../pages/invoice/transaction-list/transaction-list.component';
 import { TransactionNewComponent } from '../pages/invoice/transaction-new/transaction-new.component';
 import { FormsElementsComponent } from '../pages/forms/forms-elements/forms-elements.component';
@@ -80,6 +79,8 @@ import { FormsLayoutsComponent } from '../pages/forms/forms-layouts/forms-layout
 import { FormsTomSelectComponent } from '../pages/forms/forms-tom-select/forms-tom-select.component';
 import { FormsEditorsComponent } from '../pages/forms/forms-editors/forms-editors.component';
 import { FormsWizardComponent } from '../pages/forms/forms-wizard/forms-wizard.component';
+import { DepartmentComponent } from '../pages/department/department/department.component';
+import { UserComponent } from '../pages/user/user.component';
 
 export const PAGE_ROUTES: Routes = [
   { path: '', component: DashboardComponent },
@@ -185,5 +186,7 @@ export const PAGE_ROUTES: Routes = [
   //Users
   { path: 'user', component: UserComponent },
 
+  //departments
+  { path: 'department', component: DepartmentComponent }
 
 ]

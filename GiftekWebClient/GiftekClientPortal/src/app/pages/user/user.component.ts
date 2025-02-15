@@ -2,18 +2,18 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { NgbDropdownModule, NgbModal, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { PageChangedEvent, PaginationModule } from 'ngx-bootstrap/pagination';
-import { PageTitleComponent } from '../../../shared/page-title/page-title.component';
+import { PageTitleComponent } from '../../shared/page-title/page-title.component';
 
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [PageTitleComponent,PaginationModule,CommonModule,NgbDropdownModule,NgbTooltipModule],
+  imports: [PageTitleComponent, PaginationModule, CommonModule, NgbDropdownModule, NgbTooltipModule],
   templateUrl: './user.component.html',
   styleUrl: './user.component.scss'
 })
 export class UserComponent {
 
-  constructor(private modalService: NgbModal){}
+  constructor(private modalService: NgbModal) { }
 
   transactions = [
     {
@@ -71,8 +71,8 @@ export class UserComponent {
 
   paginateData: any[] = [];
   itemsPerPage = 5;
-  startItem!:number;
-  endItem!:number;
+  startItem!: number;
+  endItem!: number;
 
   ngOnInit(): void {
     this.breadCrumbItems = [{ label: 'User' }, { label: 'User', active: true }];

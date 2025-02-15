@@ -164,6 +164,19 @@ export const MENU: MenuItem[] = [
             },
         ]
     },
+    {
+        id: 57,
+        label: 'Department',
+        icon: 'bx bx-user',
+        subItems: [
+            {
+                id: 58,
+                label: 'Department',
+                link: '/pages/department',
+                parentId: 57
+            },
+        ]
+    },
     // {
     //     id: 1,
     //     label: 'MENUITEMS.COMPONENTS.TEXT',
