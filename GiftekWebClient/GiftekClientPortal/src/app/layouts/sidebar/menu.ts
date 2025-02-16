@@ -167,7 +167,7 @@ export const MENU: MenuItem[] = [
     {
         id: 57,
         label: 'Department',
-        icon: 'bx bx-user',
+        icon: 'ri-briefcase-3-line',
         subItems: [
             {
                 id: 58,
