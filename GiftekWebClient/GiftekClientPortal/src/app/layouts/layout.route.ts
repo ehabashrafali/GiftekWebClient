@@ -80,7 +80,7 @@ import { FormsTomSelectComponent } from '../pages/forms/forms-tom-select/forms-t
 import { FormsEditorsComponent } from '../pages/forms/forms-editors/forms-editors.component';
 import { FormsWizardComponent } from '../pages/forms/forms-wizard/forms-wizard.component';
 import { DepartmentComponent } from '../pages/department/department/department.component';
-import { UserComponent } from '../pages/user/user.component';
+import { EmployeeComponent } from '../pages/employee/employee.component';
 
 export const PAGE_ROUTES: Routes = [
   { path: '', component: DashboardComponent },
@@ -164,7 +164,7 @@ export const PAGE_ROUTES: Routes = [
   { path: 'payment-summary', component: PaymentSummaryComponent },
   { path: 'sale-report', component: SaleReportComponent },
   { path: 'expenses-report', component: ExpensesReportComponent },
-  { path: 'user', component: UserComponent },
+  { path: 'user', component: EmployeeComponent },
   { path: 'transaction-list', component: TransactionListComponent },
   { path: 'transaction-new', component: TransactionNewComponent },
 
@@ -184,7 +184,7 @@ export const PAGE_ROUTES: Routes = [
   { path: 'forms-wizard', component: FormsWizardComponent },
 
   //Users
-  { path: 'user', component: UserComponent },
+  { path: 'employees', component: EmployeeComponent },
 
   //departments
   { path: 'department', component: DepartmentComponent }

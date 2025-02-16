@@ -3,11 +3,12 @@ import { Component, OnInit } from '@angular/core';
 import { NgbDropdownModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { PageChangedEvent, PaginationModule } from 'ngx-bootstrap/pagination';
 import { PageTitleComponent } from '../../../shared/page-title/page-title.component';
+import { EmployeeComponent } from "../../employee/employee.component";
 
 @Component({
   selector: 'app-department',
   standalone: true,
-  imports: [PageTitleComponent, PaginationModule, CommonModule, NgbDropdownModule, NgbTooltipModule],
+  imports: [PageTitleComponent, PaginationModule, CommonModule, NgbDropdownModule, NgbTooltipModule, EmployeeComponent],
   templateUrl: './department.component.html',
   styleUrl: './department.component.scss'
 })
