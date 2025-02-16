@@ -153,13 +153,13 @@ export const MENU: MenuItem[] = [
     },
     {
         id: 56,
-        label: 'Users',
+        label: 'Employees',
         icon: 'bx bx-user',
         subItems: [
             {
                 id: 57,
-                label: 'Users',
-                link: '/pages/user',
+                label: 'Employees',
+                link: '/pages/employee',
                 parentId: 56
             },
         ]
